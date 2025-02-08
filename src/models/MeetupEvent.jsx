@@ -50,7 +50,7 @@ if(data){
               <p className="fw-bold display-4">Meetup Events</p>
             </div>
             <div className="col-md-4 d-flex">
-              <div className="me-2">
+              <div className="me-2 col-md-6">
                 <input
                   type="search"
                   placeholder="Search by title and tag....."
@@ -59,8 +59,8 @@ if(data){
                   onChange={handleTitle}
                 />
               </div>
-              <div>
-                <select className="form-select" onChange={handleByEvent}>
+              <div className="col-md-6">
+                <select className="form-select fw-light" onChange={handleByEvent}>
                   <option value="Both">Select Event Type</option>
                   <option value="Offline">Offline</option>
                   <option value="Online">Online</option>
