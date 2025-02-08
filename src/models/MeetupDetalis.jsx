@@ -5,8 +5,6 @@ import { useLocation, useParams } from "react-router-dom";
 
 const MeetupDetails = () => {
   const { title } = useParams();
-  // const location = useLocation();
-  // const { title } = location.state || {};
   console.log(title);
 
   const { data, loading, error } = useFetch(
@@ -44,8 +42,8 @@ const MeetupDetails = () => {
             <div className="col-md-5">
               <div className="card border border-white">
                 <div className="card-body">
-                  <p className="card-text">{data.date}</p>
-                  <p>{data.price}</p>
+                  <p className="card-text"><i class="bi bi-clock"></i> {data.date}</p>
+                  <p><i class="bi bi-currency-rupee"></i> {data.price}</p>
                 </div>
               </div>
               <div className="mt-5">

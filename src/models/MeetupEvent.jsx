@@ -89,8 +89,9 @@ if(data){
                       </p>
                     </div>
                     <div className="card-body">
-                      <p className="fw-light card-text">{app.date}</p>
-                      <h5 className="fw-bold card-text">{app.title}</h5>
+                    <h4 className="fw-bold card-text">{app.title}</h4>
+                    <p className="fw-light">Hosted by: {app.eventHost}</p>
+                    <p className="card-text"><strong><i class="bi bi-clock"></i> </strong>{app.date}</p>         
                     </div>
                   </div>
                 </Link>
